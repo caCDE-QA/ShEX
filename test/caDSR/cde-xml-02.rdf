@@ -1,0 +1,759 @@
+PREFIX cadsr: <http://cadsr.org/cde#>
+
+cadsr:DataElementList
+      cadsr:DataElement
+              [ cadsr:ALTERNATENAMELIST
+                        [ cadsr:ALTERNATENAMELIST_ITEM
+                                  [ cadsr:AlternateName
+                                            "DCP" ;
+                                    cadsr:AlternateNameType
+                                            "USED_BY" ;
+                                    cadsr:ContextName
+                                            "DCP" ;
+                                    cadsr:ContextVersion
+                                            "1" ;
+                                    cadsr:Language
+                                            "ENGLISH"
+                                  ]
+                        ] ;
+                cadsr:CLASSIFICATIONSLIST
+                        [ cadsr:CLASSIFICATIONSLIST_ITEM
+                                  [ cadsr:ClassificationScheme
+                                            [ cadsr:ContextName
+                                                      "DCP" ;
+                                              cadsr:ContextVersion
+                                                      "1" ;
+                                              cadsr:PreferredName
+                                                      "Legacy HRQOL/PRO CDEs" ;
+                                              cadsr:PublicId
+                                                      "3902628" ;
+                                              cadsr:Version
+                                                      "1"
+                                            ] ;
+                                    cadsr:ClassificationSchemeItemName
+                                            "Legacy HRQOL/PRO" ;
+                                    cadsr:ClassificationSchemeItemType
+                                            "GROUP_TYPE" ;
+                                    cadsr:CsiPublicId
+                                            "4104451" ;
+                                    cadsr:CsiVersion
+                                            "1"
+                                  ]
+                        ] ;
+                cadsr:CONTEXTNAME
+                        "CTEP" ;
+                cadsr:CONTEXTVERSION
+                        "2.31" ;
+                cadsr:DATAELEMENTCONCEPT
+                        [ cadsr:ConceptualDomain
+                                  [ cadsr:ContextName
+                                            "CTEP" ;
+                                    cadsr:ContextVersion
+                                            "2.31" ;
+                                    cadsr:LongName
+                                            "Quality of Life" ;
+                                    cadsr:PreferredName
+                                            "QOL" ;
+                                    cadsr:PublicId
+                                            "2008553" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:ContextName
+                                  "CTEP" ;
+                          cadsr:ContextVersion
+                                  "2.31" ;
+                          cadsr:LongName
+                                  "Patient Happiness Assessment" ;
+                          cadsr:ObjectClass
+                                  [ cadsr:ConceptDetails
+                                            [ cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2202778" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "0" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Patient" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C16960" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "Yes"
+                                                      ]
+                                            ] ;
+                                    cadsr:ContextName
+                                            "CTEP" ;
+                                    cadsr:ContextVersion
+                                            "2.31" ;
+                                    cadsr:LongName
+                                            "Patient" ;
+                                    cadsr:PreferredName
+                                            "Patient" ;
+                                    cadsr:PublicId
+                                            "2177068" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:ObjectClassQualifier
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:Origin
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:PreferredDefinition
+                                  "information relating to patient happiness assessment." ;
+                          cadsr:PreferredName
+                                  "PT_HAPPINESS_ASESS" ;
+                          cadsr:Property
+                                  [ cadsr:ConceptDetails
+                                            [ cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2202921" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "0" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Physical Examination" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C20989" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "Yes"
+                                                      ] ;
+                                              cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2211691" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "MSH2004_2003_12_12" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "1" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "UMLS_CUI" ;
+                                                        cadsr:LONG_NAME
+                                                                "Happiness" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Metathesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C0018592" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "No"
+                                                      ]
+                                            ] ;
+                                    cadsr:ContextName
+                                            "CTEP" ;
+                                    cadsr:ContextVersion
+                                            "2.31" ;
+                                    cadsr:LongName
+                                            "Happiness Assessment" ;
+                                    cadsr:PreferredName
+                                            "C0018592:C20989" ;
+                                    cadsr:PublicId
+                                            "2211692" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:PropertyQualifier
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:PublicId
+                                  "2202115" ;
+                          cadsr:Version
+                                  "1" ;
+                          cadsr:WorkflowStatus
+                                  "RELEASED"
+                        ] ;
+                cadsr:DATAELEMENTDERIVATION
+                        [ cadsr:ComponentDataElementsList
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:ConcatenationCharacter
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:DerivationType
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:DerivationTypeDescription
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:Methods
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:Rule
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ]
+                        ] ;
+                cadsr:LONGNAME
+                        "Patient Happiness Assessment Scale" ;
+                cadsr:ORIGIN
+                        "ACOSOG CRF:American College of Surgeons Oncology Group Case Report Form" ;
+                cadsr:PREFERREDDEFINITION
+                        "the scale to determine the patient's assessment of whether they have been a happy person." ;
+                cadsr:PREFERREDNAME
+                        "PT_HAPPI_ASESS_SCALE" ;
+                cadsr:PUBLICID
+                        "2202116" ;
+                cadsr:REFERENCEDOCUMENTSLIST
+                        [ cadsr:REFERENCEDOCUMENTSLIST_ITEM
+                                  [ cadsr:DisplayOrder
+                                            [ cadsr:NULL
+                                                      "TRUE"
+                                            ] ;
+                                    cadsr:DocumentText
+                                            "Have you been happy" ;
+                                    cadsr:DocumentType
+                                            "Alternate Question Text" ;
+                                    cadsr:Language
+                                            "ENGLISH" ;
+                                    cadsr:Name
+                                            "CRF Text" ;
+                                    cadsr:OrganizationName
+                                            [ cadsr:NULL
+                                                      "TRUE"
+                                            ] ;
+                                    cadsr:URL
+                                            [ cadsr:NULL
+                                                      "TRUE"
+                                            ]
+                                  ] ;
+                          cadsr:REFERENCEDOCUMENTSLIST_ITEM
+                                  [ cadsr:DisplayOrder
+                                            [ cadsr:NULL
+                                                      "TRUE"
+                                            ] ;
+                                    cadsr:DocumentText
+                                            "Data element and all values comply with the SF-36(R) Health Survey(C) (SF-36 Standard, US Version 1.0)" ;
+                                    cadsr:DocumentType
+                                            "DATA_ELEMENT_SOURCE" ;
+                                    cadsr:Language
+                                            "ENGLISH" ;
+                                    cadsr:Name
+                                            "Source" ;
+                                    cadsr:OrganizationName
+                                            [ cadsr:NULL
+                                                      "TRUE"
+                                            ] ;
+                                    cadsr:URL
+                                            [ cadsr:NULL
+                                                      "TRUE"
+                                            ]
+                                  ] ;
+                          cadsr:REFERENCEDOCUMENTSLIST_ITEM
+                                  [ cadsr:DisplayOrder
+                                            [ cadsr:NULL
+                                                      "TRUE"
+                                            ] ;
+                                    cadsr:DocumentText
+                                            "Have you been a happy person" ;
+                                    cadsr:DocumentType
+                                            "Preferred Question Text" ;
+                                    cadsr:Language
+                                            "ENGLISH" ;
+                                    cadsr:Name
+                                            "Have you been a happy person" ;
+                                    cadsr:OrganizationName
+                                            [ cadsr:NULL
+                                                      "TRUE"
+                                            ] ;
+                                    cadsr:URL
+                                            [ cadsr:NULL
+                                                      "TRUE"
+                                            ]
+                                  ]
+                        ] ;
+                cadsr:REGISTRATIONSTATUS
+                        "Qualified" ;
+                cadsr:VALUEDOMAIN
+                        [ cadsr:CharacterSetName
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:ConceptualDomain
+                                  [ cadsr:ContextName
+                                            "CTEP" ;
+                                    cadsr:ContextVersion
+                                            "2.31" ;
+                                    cadsr:LongName
+                                            "Assessments" ;
+                                    cadsr:PreferredName
+                                            "ASSESS" ;
+                                    cadsr:PublicId
+                                            "2008551" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:ContextName
+                                  "CTEP" ;
+                          cadsr:ContextVersion
+                                  "2.31" ;
+                          cadsr:Datatype
+                                  "CHARACTER" ;
+                          cadsr:DecimalPlace
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:DisplayFormat
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:LongName
+                                  "Assessment Scale" ;
+                          cadsr:MaximumLength
+                                  "25" ;
+                          cadsr:MaximumValue
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:MinimumLength
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:MinimumValue
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:Origin
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:PermissibleValues
+                                  [ cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "SOME OF THE TIME" ;
+                                              cadsr:PVBEGINDATE
+                                                      "5/14/2002 0:0:0" ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "Some of the time" ;
+                                              cadsr:VALUEMEANING
+                                                      "SOME OF THE TIME" ;
+                                              cadsr:VMPUBLICID
+                                                      "2561188" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "Disrupted quite a bit" ;
+                                              cadsr:PVBEGINDATE
+                                                      "1/17/2013 0:0:0" ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "Disrupted quite a bit" ;
+                                              cadsr:VALUEMEANING
+                                                      "Disrupted quite a bit" ;
+                                              cadsr:VMPUBLICID
+                                                      "3653285" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "A LITTLE OF THE TIME" ;
+                                              cadsr:PVBEGINDATE
+                                                      "5/14/2002 0:0:0" ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "A little of the time" ;
+                                              cadsr:VALUEMEANING
+                                                      "A LITTLE OF THE TIME" ;
+                                              cadsr:VMPUBLICID
+                                                      "2561189" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "Disrupted somewhat" ;
+                                              cadsr:PVBEGINDATE
+                                                      "1/17/2013 0:0:0" ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "Disrupted somewhat" ;
+                                              cadsr:VALUEMEANING
+                                                      "Disrupted somewhat" ;
+                                              cadsr:VMPUBLICID
+                                                      "3653286" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "Somewhat bothered" ;
+                                              cadsr:PVBEGINDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "Somewhat bothered" ;
+                                              cadsr:VALUEMEANING
+                                                      "Somewhat bothered" ;
+                                              cadsr:VMPUBLICID
+                                                      "2851441" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "Disrupted a little" ;
+                                              cadsr:PVBEGINDATE
+                                                      "1/17/2013 0:0:0" ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "Disrupted a little" ;
+                                              cadsr:VALUEMEANING
+                                                      "Disrupted a little" ;
+                                              cadsr:VMPUBLICID
+                                                      "3653287" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "A GOOD BIT OF THE TIME" ;
+                                              cadsr:PVBEGINDATE
+                                                      "5/14/2002 0:0:0" ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "A good bit of the time" ;
+                                              cadsr:VALUEMEANING
+                                                      "A GOOD BIT OF THE TIME" ;
+                                              cadsr:VMPUBLICID
+                                                      "2561187" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "NONE OF THE TIME" ;
+                                              cadsr:PVBEGINDATE
+                                                      "5/14/2002 0:0:0" ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "None of the time" ;
+                                              cadsr:VALUEMEANING
+                                                      "NONE OF THE TIME" ;
+                                              cadsr:VMPUBLICID
+                                                      "2561190" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "Not disrupted at all" ;
+                                              cadsr:PVBEGINDATE
+                                                      "1/17/2013 0:0:0" ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "Not disrupted at all" ;
+                                              cadsr:VALUEMEANING
+                                                      "Not disrupted at all" ;
+                                              cadsr:VMPUBLICID
+                                                      "3653288" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "Disrupted totally" ;
+                                              cadsr:PVBEGINDATE
+                                                      "1/17/2013 0:0:0" ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "Disrupted totally" ;
+                                              cadsr:VALUEMEANING
+                                                      "Disrupted totally" ;
+                                              cadsr:VMPUBLICID
+                                                      "3653284" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "MOST OF THE TIME" ;
+                                              cadsr:PVBEGINDATE
+                                                      "5/14/2002 0:0:0" ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "Most of the time" ;
+                                              cadsr:VALUEMEANING
+                                                      "MOST OF THE TIME" ;
+                                              cadsr:VMPUBLICID
+                                                      "2561186" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "ALL OF THE TIME" ;
+                                              cadsr:PVBEGINDATE
+                                                      "5/14/2002 0:0:0" ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "All of the time" ;
+                                              cadsr:VALUEMEANING
+                                                      "ALL OF THE TIME" ;
+                                              cadsr:VMPUBLICID
+                                                      "2561185" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "Bothered a little bit" ;
+                                              cadsr:PVBEGINDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "Bothered a little bit" ;
+                                              cadsr:VALUEMEANING
+                                                      "Bothered a little bit" ;
+                                              cadsr:VMPUBLICID
+                                                      "2851442" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "Bothered very much" ;
+                                              cadsr:PVBEGINDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "Bothered very much" ;
+                                              cadsr:VALUEMEANING
+                                                      "Bothered very much" ;
+                                              cadsr:VMPUBLICID
+                                                      "2851439" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "Bothered quite a bit" ;
+                                              cadsr:PVBEGINDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "Bothered quite a bit" ;
+                                              cadsr:VALUEMEANING
+                                                      "Bothered quite a bit" ;
+                                              cadsr:VMPUBLICID
+                                                      "2851440" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ] ;
+                                    cadsr:PermissibleValues_ITEM
+                                            [ cadsr:MEANINGCONCEPTS
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:MEANINGDESCRIPTION
+                                                      "Not at all bothered" ;
+                                              cadsr:PVBEGINDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:PVENDDATE
+                                                      [ cadsr:NULL
+                                                                "TRUE"
+                                                      ] ;
+                                              cadsr:VALIDVALUE
+                                                      "Not at all bothered" ;
+                                              cadsr:VALUEMEANING
+                                                      "Not at all bothered" ;
+                                              cadsr:VMPUBLICID
+                                                      "2851443" ;
+                                              cadsr:VMVERSION
+                                                      "1"
+                                            ]
+                                  ] ;
+                          cadsr:PreferredDefinition
+                                  "the scale to determine the patient's assessment of general health." ;
+                          cadsr:PreferredName
+                                  "ASSESS_SCALE" ;
+                          cadsr:PublicId
+                                  "2016428" ;
+                          cadsr:Representation
+                                  [ cadsr:ConceptDetails
+                                            [ cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2203964" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI " ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "0" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Scale" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C25664" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "Yes"
+                                                      ]
+                                            ] ;
+                                    cadsr:ContextName
+                                            "caBIG" ;
+                                    cadsr:ContextVersion
+                                            "1" ;
+                                    cadsr:LongName
+                                            "Scale" ;
+                                    cadsr:PreferredName
+                                            "C25664" ;
+                                    cadsr:PublicId
+                                            "2452834" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:UnitOfMeasure
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:ValueDomainConcepts
+                                  [] ;
+                          cadsr:ValueDomainType
+                                  "Enumerated" ;
+                          cadsr:Version
+                                  "3" ;
+                          cadsr:WorkflowStatus
+                                  "RELEASED"
+                        ] ;
+                cadsr:VERSION
+                        "1" ;
+                cadsr:WORKFLOWSTATUS
+                        "RELEASED" ;
+                cadsr:num
+                        "1445"
+              ] .

@@ -1,0 +1,138 @@
+PREFIX cadsr: <http://cadsr.org/cde#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+start=<DataElementShape>
+
+<DataElementShape> {
+  cadsr:PUBLICID xsd:string*,
+  cadsr:LONGNAME xsd:string*,
+  cadsr:PREFERREDNAME xsd:string*,
+  cadsr:PREFERREDDEFINITION xsd:string*,
+  cadsr:VERSION xsd:string*,
+  cadsr:WORKFLOWSTATUS xsd:string*,
+  cadsr:CONTEXTNAME xsd:string*,
+  cadsr:CONTEXTVERSION xsd:string*,
+  cadsr:ORIGIN xsd:string*,
+  cadsr:REGISTRATIONSTATUS @<NULLShape>*,  
+  cadsr:DATAELEMENTCONCEPT @<DATAELEMENTCONCEPTShape>*, 
+  cadsr:VALUEDOMAIN @<VALUEDOMAINShape>*
+  #cadsr:REFERENCEDOCUMENTSLIST @<REFERENCEDOCUMENTSLISTShape>,
+  #cadsr:CLASSIFICATIONSLIST @<CLASSIFICATIONSLISTShape>,
+  #cadsr:ALTERNATENAMELIST @<ALTERNATENAMELISTShape>,
+  #cadsr:DATAELEMENTDERIVATION @<cadsr:DATAELEMENTDERIVATIONShape>
+ }
+ 
+ <DATAELEMENTCONCEPTShape> {
+     cadsr:PublicId xsd:string,
+     cadsr:PreferredName xsd:string,
+     cadsr:PreferredDefinition xsd:string,
+     cadsr:LongName xsd:string,
+     cadsr:Version xsd:string,
+     cadsr:WorkflowStatus xsd:string,
+     cadsr:ContextName xsd:string,
+     cadsr:ContextVersion xsd:string,
+     cadsr:ConceptualDomain @<ConceptualDomainShape>,
+     cadsr:ObjectClass @<ObjectClassShape>,
+     cadsr:Property @<PropertyShape>,
+     cadsr:ObjectClassQualifier @<NULLShape>,
+     cadsr:PropertyQualifier @<NULLShape>,
+     cadsr:Origin @<NULLShape>
+ }
+ 
+<ConceptualDomainShape> {
+    cadsr:PublicId xsd:string,
+    cadsr:ContextName xsd:string,
+    cadsr:ContextVersion xsd:string,
+    cadsr:PreferredName xsd:string,
+    cadsr:Version xsd:string,
+    cadsr:LongName xsd:string
+
+ }
+ 
+ <ObjectClassShape> {
+    cadsr:PublicId xsd:string,
+    cadsr:ContextName xsd:string,
+    cadsr:ContextVersion xsd:string,
+    cadsr:PreferredName xsd:string,
+    cadsr:Version xsd:string,
+    cadsr:LongName xsd:string,
+    cadsr:ConceptDetails @<ConceptDetailsShape> 
+ } 
+
+<PropertyShape> {
+    cadsr:PublicId xsd:string,
+    cadsr:ContextName xsd:string,
+    cadsr:ContextVersion xsd:string,
+    cadsr:PreferredName xsd:string,
+    cadsr:Version xsd:string,
+    cadsr:LongName xsd:string,
+    cadsr:ConceptDetails @<ConceptDetailsShape> 
+}
+
+<ConceptDetailsShape> {
+    cadsr:ConceptDetails_ITEM @<ConceptDetailsITEMShape>*
+}
+
+<ConceptDetailsITEMShape> {
+    cadsr:PREFERRED_NAME xsd:string,
+    cadsr:LONG_NAME xsd:string,
+    cadsr:CON_ID xsd:string,
+    cadsr:DEFINITION_SOURCE xsd:string,
+    cadsr:ORIGIN xsd:string,
+    cadsr:EVS_SOURCE xsd:string,
+    cadsr:PRIMARY_FLAG_IND xsd:string,
+    cadsr:DISPLAY_ORDER xsd:string
+}
+
+<VALUEDOMAINShape> {
+    cadsr:PublicId xsd:string,
+    cadsr:PreferredName xsd:string,
+    cadsr:PreferredDefinition xsd:string,
+    cadsr:LongName xsd:string,
+    cadsr:Version xsd:string,
+    cadsr:WorkflowStatus xsd:string,
+    cadsr:ContextName xsd:string,
+    cadsr:ContextVersion xsd:string,
+    cadsr:ConceptualDomain @<ConceptualDomainShape>,
+    cadsr:Datatype xsd:string,
+    cadsr:ValueDomainType xsd:string,
+    cadsr:UnitOfMeasure @<NULLShape>,
+    cadsr:DisplayFormat @<NULLShape>,
+    cadsr:MaximumLength xsd:string,
+    cadsr:MinimumLength @<NULLShape>,
+    cadsr:DecimalPlace xsd:string,
+    cadsr:CharacterSetName @<NULLShape>,
+    cadsr:MaximumValue @<NULLShape>,
+    cadsr:MinimumValue @<NULLShape>,
+    cadsr:Origin @<NULLShape>,
+    cadsr:Representation @<RepresentationShape>,
+    cadsr:PermissibleValues @<PermissibleValueShape>*
+    #cadsr:ValueDomainConcepts @<ValueDomainConceptsShape>
+}
+
+<PermissibleValueShape> {
+    cadsr:VALIDVALUE xsd:string,
+    cadsr:VALUEMEANING xsd:string,
+    cadsr:MEANINGDESCRIPTION xsd:string,
+    cadsr:MEANINGCONCEPTS xsd:string,
+    cadsr:PVBEGINDATE xsd:dateTime,
+    (cadsr:PVENDDATE xsd:dateTime
+     |cadsr:PVENDDATE @<NULLShape>),
+    cadsr:VMPUBLICID xsd:string,
+    cadsr:VMVERSION xsd:string
+}
+
+<RepresentationShape> {
+    cadsr:PublicId xsd:string,
+    cadsr:ContextName xsd:string,
+    cadsr:ContextVersion xsd:string,
+    cadsr:PreferredName xsd:string,
+    cadsr:Version xsd:string,
+    cadsr:LongName xsd:string,
+    cadsr:ConceptDetails @<ConceptDetailsShape>
+}
+
+<NULLShape> {
+    cadsr:NULL xsd:string
+}

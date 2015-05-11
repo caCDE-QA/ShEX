@@ -8,7 +8,7 @@
     <meta name="keywords" content="schema validator, Turtle" />
     <meta name="description" content="ShEx is a structural validator for RDF graphs." />
 	  <meta name="language" content="en" />
-    <title>ShEx Data Validation Demo</title>
+    <title>ShEx QA Tool for Cancer Study Common Data Elements</title>
 
 	  <!-- DEMO styles - specific to this page -->
 	  <link rel="stylesheet" type="text/css" href="demobits/ShExDemo-layout.css" />
@@ -57,7 +57,27 @@ This is appended with the cloned contents of .hasTooltip .toolTip in order to:
 
 	    <div class="content">
             <ul>
-              <li>basic
+              <li>Test Cases
+                <ul>
+                  <li>caDSR 
+                      <ul>
+                        <li><a href="FancyShExDemo.html?schemaURL=Examples/caDSR/cadsr-shapeexpressions.txt&amp;dataURL=test/caDSR/cde-xml-01.rdf">Fail</a></li>
+                        <li><a href="FancyShExDemo.html?schemaURL=Examples/caDSR/cadsr-shapeexpressions.txt&amp;dataURL=test/caDSR/cde-xml-02.rdf">Pass</a></li>
+                      </ul>
+                  </li>
+                  <li>FHIR 
+                      <ul>
+                        <li><a href="FancyShExDemo.html?schemaURL=Examples/fhir/medication.txt&amp;dataURL=test/fhir/medication_data.rdf">Medication</a></li>
+                      </ul>
+                  </li>
+                  <li>ISO11179 
+                      <ul>
+                        <li><a href="FancyShExDemo.html?schemaURL=Examples/ISO11179/iso11179.txt">ISO11179</a></li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+              <!--li>basic
                 <ul>
                   <li>object datatype: <a href="FancyShExDemo.html?schema=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0Astart%20%3D%20%7B%0A%20%20%20%20ex%3AreporterName%20xsd%3Astring%2C%0A%20%20%20%20ex%3AreportedOn%20xsd%3AdateTime%0A%7D&amp;data=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0A%3CSomebody%3E%0A%20%20%20%20ex%3AreportedOn%20%20%20%222013-01-23T10%3A18%3A00%22%5E%5Exsd%3AdateTime%20%3B%0A%20%20%20%20%23%20RDF%20simple%20literals%20have%20type%20xsd%3Astring.%0A%20%20%20%20ex%3AreporterName%20%22Bob%22%20.%0A%0A&amp;starting-nodes=%3CSomebody%3E">pass</a> <a href="FancyShExDemo.html?starting-nodes=%3CSomebody%3E&amp;schema=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0Astart%20%3D%20%7B%0A%20%20%20%20ex%3AreporterName%20xsd%3Astring%2C%0A%20%20%20%20ex%3AreportedOn%20xsd%3AdateTime%0A%7D&amp;data=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0A%3CSomebody%3E%0A%20%20%20%20%23%20should%20be%20a%20dateTime%0A%20%20%20%20ex%3AreportedOn%20%20%20%222013-01-23%22%5E%5Exsd%3Adate%20%3B%0A%20%20%20%20%23%20should%20be%20a%20string.%0A%20%20%20%20ex%3AreporterName%20808%20.%0A%0A">fail</a></li>
                   <li>cardinality: <a href="FancyShExDemo.html?starting-nodes=%3CSomebody%3E&amp;schema=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0Astart%20%3D%20%7B%0A%20%20%20%20ex%3AbirthDate%20xsd%3AdateTime%20%3F%2C%0A%20%20%20%20ex%3AgivenName%20xsd%3Astring%20%2B%2C%0A%20%20%20%20ex%3Abirthmarks%20xsd%3Astring%20*%2C%0A%20%20%20%20ex%3AbiologicalParentName%20xsd%3Astring%20%7B2%7D%0A%7D&amp;data=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0A%3CSomebody%3E%0A%20%20%20%20ex%3AbirthDate%20%221980-04-27T17%3A23%3A31%22%5E%5Exsd%3AdateTime%20%3B%0A%20%20%20%20ex%3AgivenName%20%22Sarah%22%2C%20%22Ann%22%3B%0A%20%20%20%20ex%3Abirthmarks%20%22posterior%20left%20shoulder%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22right%20cheek%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22left%20index%20finger%22%3B%0A%20%20%20%20ex%3AbiologicalParentName%20%22Pat%20Jones%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22Gene%20Holmes%22%20.%0A%0A">pass</a> <a href="FancyShExDemo.html?starting-nodes=%3CSomebody%3E&amp;schema=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0Astart%20%3D%20%7B%0A%20%20%20%20ex%3AbirthDate%20xsd%3AdateTime%20%3F%2C%0A%20%20%20%20ex%3AgivenName%20xsd%3Astring%20%2B%2C%0A%20%20%20%20ex%3Abirthmarks%20xsd%3Astring%20*%2C%0A%20%20%20%20ex%3AbiologicalParentName%20xsd%3Astring%20%7B2%7D%0A%7D&amp;data=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0A%3CSomebody%3E%0A%20%20%20%20%23%20two%20recorded%20birthdates%0A%20%20%20%20ex%3AbirthDate%20%221980-04-27T17%3A23%3A31%22%5E%5Exsd%3AdateTime%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%221980-04-27T17%3A24%3A00%22%5E%5Exsd%3AdateTime%20%3B%0A%20%20%20%20%23%20missing%20ex%3AgivenName%0A%20%20%20%20ex%3AbiologicalParentName%20%22Pat%20Jones%22%20.%0A">fail</a></li>
@@ -69,14 +89,6 @@ This is appended with the cloned contents of .hasTooltip .toolTip in order to:
                   <li><a href="http://w3.org/brief/NDMz">node fulfilling multiple shapes</a>, <a href="http://w3.org/brief/NDQx">with remaining triples</a> (demonstrates graph coverage)</li>
                 </ul>
               </li>
-              <!-- li>mode d'employ
-                <ul>
-                  <li><a href=""></a>verify specific node</li>
-                  <li><a href=""></a>find node types</li>
-                  <li><a href=""></a>saving state</li>
-                  <li><a href=""></a>using browser history</li>
-                </ul>
-              </li -->
               <li>inheritance/polymorphism
                 <ul>
                   <li>basic inheritance <a href="FancyShExDemo.html?starting-nodes=%3CSomebody%3E&amp;schema=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20foaf%3A%20%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0Astart%20%3D%20%3CbirthCertificateShape%3E%0A%0A%3CPersonShape%3E%20%7B%20%23%20common%20structure%20for%20shapes%20below%0A%20%20%20%20foaf%3Aname%20xsd%3Astring%0A%7D%0A%0A%3CbirthCertificateShape%3E%20%7B%0A%20%20%20%20%26%3CPersonShape%3E%2C%0A%20%20%20%20ex%3AbiologicalParent%20%40%3CFatherShape%3E%2C%0A%20%20%20%20ex%3AbiologicalParent%20%40%3CMotherShape%3E%0A%7D%0A%0A%3CFatherShape%3E%20%7B%0A%20%20%20%20%26%3CPersonShape%3E%2C%0A%20%20%20%20ex%3Agender%20(ex%3AMale)%0A%7D%0A%0A%3CMotherShape%3E%20%7B%0A%20%20%20%20%26%3CPersonShape%3E%2C%0A%20%20%20%20ex%3Agender%20(ex%3AFemale)%0A%7D&amp;data=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20foaf%3A%20%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F%3E%0A%0A%3CSomebody%3E%0A%20%20%20%20foaf%3Aname%20%22Sarah%20Ann%20Holmes%22%3B%0A%20%20%20%20ex%3AbiologicalParent%0A%20%20%20%20%20%20%5B%20ex%3Agender%20ex%3AMale%3B%0A%20%20%20%20%20%20%20%20foaf%3Aname%20%22Pat%20Jones%22%20%5D%2C%0A%20%20%20%20%20%20%5B%20ex%3Agender%20ex%3AFemale%3B%0A%20%20%20%20%20%20%20%20foaf%3Aname%20%22Gene%20Holmes%22%20%5D.">factor our commonalities</a></li>
@@ -90,7 +102,7 @@ This is appended with the cloned contents of .hasTooltip .toolTip in order to:
                     <a href="FancyShExDemo.html?starting-nodes=_%3A0&amp;schema=PREFIX%20foaf%3A%20%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0Astart%20%3D%20%3CPerson%3E%0A%3CPerson%3E%20%7B%0A%20%20%20%20foaf%3Aname%20xsd%3Astring%2C%0A%20%20%20%20foaf%3Aknows%20%40%3CPerson%3E*%0A%7D&amp;data=PREFIX%20foaf%3A%20%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F%3E%0A%0A%5B%20foaf%3Aname%20%22Alice%22%20%3B%0A%20%20foaf%3Aknows%0A%20%20%20%20%5B%20foaf%3Aname%20%22Bob%22%20%5D%2C%0A%20%20%20%20%5B%20foaf%3Aname%20%22Eve%22%20%3B%0A%20%20%20%20%20%20foaf%3Aknows%0A%20%20%20%20%20%20%20%20%5B%20foaf%3Aname%20%22Eve2%22%20%5D%2C%0A%20%20%20%20%20%20%20%20%5B%20foaf%3Aname%20%22Eve3%22%20%5D%0A%20%20%20%20%5D%0A%5D%20.%0A&amp;colorize=true" class="hasToolTip">
                       blank node highlighting
                       <span class="toolTip">Entries in the select list under <strong>Validation:</strong> highlight the corresponding terms in the data.</span>
-                    </a><!-- http://w3.org/brief/NDMw -->
+                    </a>
                   </li>
                   <li>extra triples: <a href="FancyShExDemo.html?starting-nodes=%3CSomebody%3E&amp;colorize=true&amp;schema=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0Astart%20%3D%20%7B%0A%20%20%20%20ex%3AreporterName%20xsd%3Astring%2C%0A%20%20%20%20ex%3AreportedOn%20xsd%3AdateTime%0A%7D&amp;data=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0A%3CSomebody%3E%0A%20%20%20%20ex%3AreportedOn%20%20%20%222013-01-23T10%3A18%3A00%22%5E%5Exsd%3AdateTime%20%3B%0A%20%20%20%20ex%3AreporterName%20%22Bob%22%20%3B%0A%20%20%20%20ex%3Areason%20%22too%20much%20smoke%22%20.%0A%0A">open shape (highlights "fringe")</a> <a href="FancyShExDemo.html?starting-nodes=%3CSomebody%3E&amp;colorize=true&amp;schema=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0Astart%20%3D%20%7B%0A%20%20%20%20ex%3AreporterName%20xsd%3Astring%2C%0A%20%20%20%20ex%3AreportedOn%20xsd%3AdateTime%0A%7D&amp;data=PREFIX%20ex%3A%20%3Chttp%3A%2F%2Fex.example%2F%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0A%3CSomebody%3E%0A%20%20%20%20ex%3AreportedOn%20%20%20%222013-01-23T10%3A18%3A00%22%5E%5Exsd%3AdateTime%20%3B%0A%20%20%20%20ex%3AreporterName%20%22Bob%22%20%3B%0A%20%20%20%20ex%3Areason%20%22too%20much%20smoke%22%20.%0A%0A&amp;closedShapes=true">closed shape (fails match)</a></li>
                 </ul>
@@ -130,7 +142,7 @@ This is appended with the cloned contents of .hasTooltip .toolTip in order to:
                   </li>
                 </ul>
               </li>
-            </ul>
+            </ul-->
 		    <!-- ul>
 			    <li><a href="#" onclick="outerLayout.toggle('north')">Toggle North</a></li>
 			    <li><a href="#" onclick="outerLayout.toggle('south')">Toggle South</a></li>
@@ -287,10 +299,10 @@ This is appended with the cloned contents of .hasTooltip .toolTip in order to:
     <div id="resourceNav">
                 <div id="title"><!-- @@ -->
                     <h1><a href="." tabindex="10">ShEx</a></h1>
-                    <h2>Shape Expressions Resources:</h2>
+                    <h2>ShEx QA Tool for Cancer Study Common Data Elements</h2>
                 </div>
 	    <div class="content">
-          @@todo add navigation to specs, etc.
+          
 	    </div>
 	    <ul class="toolbar">
 		    <li id="tbarToggleResults" class="first"><span></span>Toggle Results</li>

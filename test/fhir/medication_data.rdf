@@ -1,0 +1,68 @@
+#BASE <http://hl7.org/fhir/>
+PREFIX fhir: <http://hl7.org/fhir/>
+PREFIX Medication: <http://hl7.org/fhir/Medication/>
+PREFIX CodeableConcept: <http://hl7.org/fhir/CodeableConcept/>
+PREFIX Coding: <http://hl7.org/fhir/Coding/>
+PREFIX Narrative: <http://hl7.org/fhir/Narrative/>
+PREFIX ResourceReference: <http://hl7.org/fhir/ResourceReference/>
+PREFIX Extension: <http://hl7.org/fhir/Extension/>
+PREFIX Medication_package: <http://hl7.org/fhir/Medication_package/>
+PREFIX Medication_package_content: <http://hl7.org/fhir/Medication_package_content/>
+PREFIX Quantity: <http://hl7.org/fhir/Quantity/>
+PREFIX Medication_product: <http://hl7.org/fhir/Medication_product/>
+PREFIX Medication_product_ingredient: <http://hl7.org/fhir/Medication_product_ingredient/>
+PREFIX Ratio: <http://hl7.org/fhir/Ratio/>
+PREFIX Resource: <http://hl7.org/fhir/Resource/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+[] a fhir:Medication;
+      Medication:text [
+         a fhir:Narrative;
+         Narrative:status  "generated";
+         
+         Narrative:div  """<div>123456789: Penicillin VK oral suspension 125mg/5ml</div>123456789: Penicillin VK oral suspension 125mg/5ml"""
+         
+      ];
+      Medication:name  "Penicillin VK oral suspension 125mg/5ml";
+    
+      Medication:code [
+         a fhir:CodeableConcept;
+         CodeableConcept:coding [
+            a fhir:Coding;
+            Coding:system "http://snomed.info/id";
+            
+            Coding:code  "323418000";
+            
+            Coding:display "Phenoxymethylpenicillin 125mg/5mL oral solution (product)"
+            
+         ];
+         CodeableConcept:coding [
+            a fhir:Coding;
+            Coding:system "http://nehta.gov.au/amt/v2";
+            
+            Coding:code  "22571011000036102";
+            
+            Coding:display  "phenoxymethylpenicillin 125 mg / 5 mL oral liquid, 5 mL measure"
+            
+         ];
+      ];
+      Medication:isBrand "false";
+      
+      Medication:kind "product";
+      
+      Medication:product [
+         Medication_product:form [
+            a fhir:CodeableConcept;
+            CodeableConcept:coding [
+               a fhir:Coding;
+               Coding:system "http://snomed.info/id";
+               
+               Coding:code "37595005";
+               
+               Coding:display "Suspension"
+               
+            ];
+         ];
+      ];
+.

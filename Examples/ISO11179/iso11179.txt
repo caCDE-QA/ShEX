@@ -1,0 +1,113 @@
+PREFIX iso11179: <http://iso.org/11179#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+start=<Data_Element_Shape>
+
+<Data_Element_Shape> {
+    rdf:type (iso11179:Data_Element),
+    rdfs:label xsd:string,
+    iso11179:data_element_precision xsd:integer?,
+    iso11179:meaning @<Data_Element_Concept_Shape>,
+    iso11179:domain @<Value_Domain_Shape>
+
+}
+
+<Data_Element_Concept_Shape> {
+    rdf:type (iso11179:Data_Element_Concept),
+    rdfs:label xsd:string,
+    iso11179:object_class @<Object_Class_Shape>?,
+    iso11179:property @<Property_Shape>?,
+    iso11179:domain @<Conceptual_Domain_Shape>
+    
+}
+
+
+<Object_Class_Shape> {
+    rdf:type (iso11179:Object_Class),
+    rdfs:label xsd:string
+}
+
+<Property_Shape> {
+    rdf:type (iso11179:Property),
+    rdfs:label xsd:string
+
+}
+
+VIRTUAL <Value_Domain_Shape> {
+    rdf:type (iso11179:Value_Domain),
+    rdfs:label xsd:string, 
+    iso11179:value_domain_datatype @<Datatype_Shape>,
+    iso11179:value_domain_format xsd:string?,
+    iso11179:value_domain_maximum_character_quantity xsd:integer?,
+    iso11179:value_domain_unite_of_measure @<Unit_of_Measure>?,
+    iso11179:meaning @<Conceptual_Domain_Shape>
+}
+
+<Enumerated_Value_Domain_Shape> {
+    & <Value_Domain_Shape>,
+    rdf:type <iso11179:Enumerated_Value_Domain>,
+    iso11179:member @<Permissible_Value_Shape> 
+}
+
+<Permissible_Value_Shape> {
+    rdf:type (iso11179:Permissible_Value),
+    rdfs:label xsd:string, 
+    iso11179:permissible_value_begin_date xsd:dateTime, #It is Date in spec.
+    iso11179:permissible_value_end_date xsd:dateTime?,  #It is Date in spec.
+    iso11179:permitted_value xsd:string, #It is Value in spec.
+    iso11179:meaning @<Value_Meaning_Shape>
+}
+
+<Described_Value_Domain_Shape> {
+    & <Value_Domain_Shape>,
+    rdf:type <iso11179:Described_Value_Domain>,
+    iso11179:value_domain_description xsd:string, #It is Text in spec.
+    iso11179:meaning @<Described_Conceptual_Domain_Shape>
+    
+}
+
+VIRTUAL <Conceptual_Domain_Shape> {
+    rdf:type (iso11179:Conceptual_Domain),
+    rdfs:label xsd:string, 
+    iso11179:dimensionality @<Dimensionality_Shape>?
+}
+
+<Described_Conceptual_Domain_Shape> {
+    & <Conceptual_Domain_Shape>,
+    rdf:type (iso11179:Described_Conceptual_Domain),
+    rdfs:label xsd:string, 
+    iso11179:described_conceptual_domain_description xsd:string #It is Text in spec.
+}
+
+<Enumerated_Conceptual_Domain_Shape> {
+    & <Conceptual_Domain_Shape>,
+    rdf:type (iso11179:Enumerated_Conceptual_Domain),
+    rdfs:label xsd:string,
+    iso11179:member @<Value_Meaning_Shape>
+}
+
+<Value_Meaning_Shape> {
+    rdf:type (iso11179:Value_Meaning),
+    rdfs:label xsd:string,
+    iso11179:value_meaning_begin_date xsd:dateTime, #It is Date in spec.
+    iso11179:value_meaning_end_date xsd:dateTime?   #It is Date in spec.
+   
+}
+
+<Datatype_Shape> {
+    rdf:type (iso11179:Datatype),
+    rdfs:label xsd:string,
+    iso11179:datatype_annotation xsd:string?, #It is Text in spec.
+    iso11179:datatype_description xsd:string, #It is Text in spec.
+    iso11179:datatype_name xsd:string,
+    iso11179:datatype_scheme_reference xsd:string #It is Sign in spec.
+}
+
+<Dimensionality_Shape> {
+    rdf:type (iso11179:Dimensionality),
+    rdfs:label xsd:string
+}
+
+

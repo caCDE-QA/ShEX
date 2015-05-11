@@ -1,0 +1,480 @@
+PREFIX cadsr: <http://cadsr.org/cde#
+cadsr:DataElementList
+      cadsr:DataElement
+              [ cadsr:ALTERNATENAMELIST
+                        [] ;
+                cadsr:CLASSIFICATIONSLIST
+                        [ cadsr:CLASSIFICATIONSLIST_ITEM
+                                  [ cadsr:ClassificationScheme
+                                            [ cadsr:ContextName
+                                                      "BOLD" ;
+                                              cadsr:ContextVersion
+                                                      "1" ;
+                                              cadsr:PreferredName
+                                                      "General Elements" ;
+                                              cadsr:PublicId
+                                                      "3886753" ;
+                                              cadsr:Version
+                                                      "1"
+                                            ] ;
+                                    cadsr:ClassificationSchemeItemName
+                                            "General" ;
+                                    cadsr:ClassificationSchemeItemType
+                                            "USAGE_TYPE" ;
+                                    cadsr:CsiPublicId
+                                            "3902138" ;
+                                    cadsr:CsiVersion
+                                            "1"
+                                  ] ;
+                          cadsr:CLASSIFICATIONSLIST_ITEM
+                                  [ cadsr:ClassificationScheme
+                                            [ cadsr:ContextName
+                                                      "caBIG" ;
+                                              cadsr:ContextVersion
+                                                      "1" ;
+                                              cadsr:PreferredName
+                                                      "BOLD " ;
+                                              cadsr:PublicId
+                                                      "3461586" ;
+                                              cadsr:Version
+                                                      "1"
+                                            ] ;
+                                    cadsr:ClassificationSchemeItemName
+                                            "General Elements" ;
+                                    cadsr:ClassificationSchemeItemType
+                                            "GROUP_TYPE" ;
+                                    cadsr:CsiPublicId
+                                            "3461588" ;
+                                    cadsr:CsiVersion
+                                            "1"
+                                  ]
+                        ] ;
+                cadsr:CONTEXTNAME
+                        "BOLD" ;
+                cadsr:CONTEXTVERSION
+                        "1" ;
+                cadsr:DATAELEMENTCONCEPT
+                        [ cadsr:ConceptualDomain
+                                  [ cadsr:ContextName
+                                            "CTEP" ;
+                                    cadsr:ContextVersion
+                                            "2.31" ;
+                                    cadsr:LongName
+                                            "Occurrences" ;
+                                    cadsr:PreferredName
+                                            "OCURS" ;
+                                    cadsr:PublicId
+                                            "2008561" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:ContextName
+                                  "caBIG" ;
+                          cadsr:ContextVersion
+                                  "1" ;
+                          cadsr:LongName
+                                  "Registration To Event Duration Calculation" ;
+                          cadsr:ObjectClass
+                                  [ cadsr:ConceptDetails
+                                            [ cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2672667" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "2" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "To" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C65107" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "No"
+                                                      ] ;
+                                              cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2202799" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "3" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Registration" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C25646" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "No"
+                                                      ] ;
+                                              cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2202572" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "1" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Event" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C25499" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "No"
+                                                      ] ;
+                                              cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2202512" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "0" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Duration" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C25330" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "Yes"
+                                                      ]
+                                            ] ;
+                                    cadsr:ContextName
+                                            "caBIG" ;
+                                    cadsr:ContextVersion
+                                            "1" ;
+                                    cadsr:LongName
+                                            "Registration To Event Duration" ;
+                                    cadsr:PreferredName
+                                            "C25646:C65107:C25499:C25330" ;
+                                    cadsr:PublicId
+                                            "3302239" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:ObjectClassQualifier
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:Origin
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:PreferredDefinition
+                                  "information related to a protocol-defined event from the time or instance of registration or enrollment._Used as a function word to indicate direction, purpose, or movement._Event; something that happens at a given place and time._The period of time during which something continues._The procedure or activity of determining something by mathematical or logical methods." ;
+                          cadsr:PreferredName
+                                  "3302239v1.0:2825201v1.0" ;
+                          cadsr:Property
+                                  [ cadsr:ConceptDetails
+                                            [ cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2654477" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "0" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Calculation" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C54125" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "Yes"
+                                                      ]
+                                            ] ;
+                                    cadsr:ContextName
+                                            "caBIG" ;
+                                    cadsr:ContextVersion
+                                            "1" ;
+                                    cadsr:LongName
+                                            "Calculation" ;
+                                    cadsr:PreferredName
+                                            "C54125" ;
+                                    cadsr:PublicId
+                                            "2825201" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:PropertyQualifier
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:PublicId
+                                  "3302241" ;
+                          cadsr:Version
+                                  "1" ;
+                          cadsr:WorkflowStatus
+                                  "RELEASED"
+                        ] ;
+                cadsr:DATAELEMENTDERIVATION
+                        [ cadsr:ComponentDataElementsList
+                                  [ cadsr:ComponentDataElementsList_ITEM
+                                            [ cadsr:ContextName
+                                                      "CCR" ;
+                                              cadsr:DisplayOrder
+                                                      "2" ;
+                                              cadsr:LongName
+                                                      "Time Duration Number Value" ;
+                                              cadsr:PreferredDefinition
+                                                      "Value that is paired with a unit of measure (hours, weeks, days) to express the length of time that an activity or event lasted." ;
+                                              cadsr:PreferredName
+                                                      "TM_DURN_VAL" ;
+                                              cadsr:PublicId
+                                                      "3150982" ;
+                                              cadsr:Version
+                                                      "1" ;
+                                              cadsr:WorkflowStatus
+                                                      "RELEASED"
+                                            ] ;
+                                    cadsr:ComponentDataElementsList_ITEM
+                                            [ cadsr:ContextName
+                                                      "CTEP" ;
+                                              cadsr:DisplayOrder
+                                                      "1" ;
+                                              cadsr:LongName
+                                                      "Registration Protocol Event Type" ;
+                                              cadsr:PreferredDefinition
+                                                      "the type of protocol-defined event from the time or instance of registration or enrollment." ;
+                                              cadsr:PreferredName
+                                                      "REG_PROT_EVENT_TP" ;
+                                              cadsr:PublicId
+                                                      "2540017" ;
+                                              cadsr:Version
+                                                      "1" ;
+                                              cadsr:WorkflowStatus
+                                                      "RELEASED"
+                                            ]
+                                  ] ;
+                          cadsr:ConcatenationCharacter
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:DerivationType
+                                  "CALCULATED" ;
+                          cadsr:DerivationTypeDescription
+                                  "CALCULATED" ;
+                          cadsr:Methods
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:Rule
+                                  "Based on event in #1, calculate duration of event (#2) and express as in derived data element."
+                        ] ;
+                cadsr:LONGNAME
+                        "Registration To Event Calculation Day Month Duration Value" ;
+                cadsr:ORIGIN
+                        "BOLD:Breast Oncology Local Disease Initiative" ;
+                cadsr:PREFERREDDEFINITION
+                        "Calculation of the time (in days/months) from the registration of an individual to a clinical trial to another protocol-related event." ;
+                cadsr:PREFERREDNAME
+                        "3302241v1.0:3302238v1.0" ;
+                cadsr:PUBLICID
+                        "3302242" ;
+                cadsr:REFERENCEDOCUMENTSLIST
+                        [ cadsr:REFERENCEDOCUMENTSLIST_ITEM
+                                  [ cadsr:DisplayOrder
+                                            [ cadsr:NULL
+                                                      "TRUE"
+                                            ] ;
+                                    cadsr:DocumentText
+                                            "Duration" ;
+                                    cadsr:DocumentType
+                                            "Preferred Question Text" ;
+                                    cadsr:Language
+                                            "ENGLISH" ;
+                                    cadsr:Name
+                                            "Duration" ;
+                                    cadsr:OrganizationName
+                                            [ cadsr:NULL
+                                                      "TRUE"
+                                            ] ;
+                                    cadsr:URL
+                                            [ cadsr:NULL
+                                                      "TRUE"
+                                            ]
+                                  ]
+                        ] ;
+                cadsr:REGISTRATIONSTATUS
+                        [ cadsr:NULL
+                                  "TRUE"
+                        ] ;
+                cadsr:VALUEDOMAIN
+                        [ cadsr:CharacterSetName
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:ConceptualDomain
+                                  [ cadsr:ContextName
+                                            "CTEP" ;
+                                    cadsr:ContextVersion
+                                            "2.31" ;
+                                    cadsr:LongName
+                                            "Occurrences" ;
+                                    cadsr:PreferredName
+                                            "OCURS" ;
+                                    cadsr:PublicId
+                                            "2008561" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:ContextName
+                                  "caBIG" ;
+                          cadsr:ContextVersion
+                                  "1" ;
+                          cadsr:Datatype
+                                  "NUMBER" ;
+                          cadsr:DecimalPlace
+                                  "1" ;
+                          cadsr:DisplayFormat
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:LongName
+                                  "Day Month Duration Value" ;
+                          cadsr:MaximumLength
+                                  "4" ;
+                          cadsr:MaximumValue
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:MinimumLength
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:MinimumValue
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:Origin
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:PermissibleValues
+                                  [] ;
+                          cadsr:PreferredDefinition
+                                  "The time for Earth to make a complete rotation on its axis; ordinarily divided into twenty-four hours, equal to 86 400 seconds. This also refers to a specific day._One of the 12 divisions of a year as determined by a calendar.  It corresponds to the unit of time of approximately to one cycle of the moon's phases, about 30 days or 4 weeks._The period of time during which something continues._A numerical quantity measured or assigned or computed." ;
+                          cadsr:PreferredName
+                                  "DAY_MON_DUR_VAL" ;
+                          cadsr:PublicId
+                                  "3302238" ;
+                          cadsr:Representation
+                                  [ cadsr:ConceptDetails
+                                            [ cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2202680" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "3" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Day" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C25301" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "No"
+                                                      ] ;
+                                              cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2202512" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "1" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Duration" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C25330" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "No"
+                                                      ] ;
+                                              cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2202580" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "2" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Month" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C29846" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "No"
+                                                      ] ;
+                                              cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2203990" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "0" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Value" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C25712" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "Yes"
+                                                      ]
+                                            ] ;
+                                    cadsr:ContextName
+                                            "caBIG" ;
+                                    cadsr:ContextVersion
+                                            "1" ;
+                                    cadsr:LongName
+                                            "Day Month Duration Value" ;
+                                    cadsr:PreferredName
+                                            "C25301:C29846:C25330:C25712" ;
+                                    cadsr:PublicId
+                                            "3302237" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:UnitOfMeasure
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:ValueDomainConcepts
+                                  [] ;
+                          cadsr:ValueDomainType
+                                  "NonEnumerated" ;
+                          cadsr:Version
+                                  "1" ;
+                          cadsr:WorkflowStatus
+                                  "RELEASED"
+                        ] ;
+                cadsr:VERSION
+                        "1" ;
+                cadsr:WORKFLOWSTATUS
+                        "RELEASED" ;
+                cadsr:num
+                        "1"
+              ] .

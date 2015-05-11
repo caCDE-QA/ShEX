@@ -1,0 +1,129 @@
+#BASE <http://hl7.org/fhir/>
+PREFIX fhir: <http://hl7.org/fhir/>
+PREFIX Medication: <http://hl7.org/fhir/Medication/>
+PREFIX CodeableConcept: <http://hl7.org/fhir/CodeableConcept/>
+PREFIX Coding: <http://hl7.org/fhir/Coding/>
+PREFIX Narrative: <http://hl7.org/fhir/Narrative/>
+PREFIX ResourceReference: <http://hl7.org/fhir/ResourceReference/>
+PREFIX Extension: <http://hl7.org/fhir/Extension/>
+PREFIX Medication_package: <http://hl7.org/fhir/Medication_package/>
+PREFIX Medication_package_content: <http://hl7.org/fhir/Medication_package_content/>
+PREFIX Quantity: <http://hl7.org/fhir/Quantity/>
+PREFIX Medication_product: <http://hl7.org/fhir/Medication_product/>
+PREFIX Medication_product_ingredient: <http://hl7.org/fhir/Medication_product_ingredient/>
+PREFIX Ratio: <http://hl7.org/fhir/Ratio/>
+PREFIX Resource: <http://hl7.org/fhir/Resource/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+start=<Medication>
+
+<Medication> {
+  a (fhir:Medication)?,
+  Medication:kind LITERAL?, #for the code type, should we use Medication:kind (Medication:product Medication:package)?
+  Medication:code @<CodeableConcept>?,
+  Medication:name LITERAL?,
+  Medication:extension @<Extension>?,
+  Medication:package @<Medication_package>?,
+  Medication:text @<Narrative>?,
+  Medication:product @<Medication_product>?,
+  Medication:isBrand LITERAL?,
+  Medication:contained @<ResourceReference>?, #Is this a Resource or Resource Reference
+  Medication:modifierExtension @<Extension>?,
+  Medication:manufacturer @<ResourceReference>?
+}
+
+<CodeableConcept> {
+  a (fhir:CodeableConcept)?,
+  CodeableConcept:text LITERAL?,
+  CodeableConcept:modifierExtension @<Extension>?,
+  CodeableConcept:coding @<Coding>*,
+  CodeableConcept:extension @<Extension>?
+}
+
+<Coding> {
+  a (fhir:Coding)?,
+  Coding:modifierExtension @<Extension>?,
+  Coding:valueSet @<ResourceReference>?,
+  Coding:extension @<Extension>?,
+  Coding:system LITERAL?,
+  Coding:primary LITERAL?,
+  Coding:code LITERAL?,
+  Coding:version LITERAL?,
+  Coding:display LITERAL?
+}
+
+<Narrative> {
+  a (fhir:Narrative)?,
+  Narrative:status LITERAL?,
+  Narrative:div LITERAL?,
+  Narrative:modifierExtension @<Extension>?,
+  Narrative:extension @<Extension>?
+}
+
+<ResourceReference> {
+  a (fhir:ResourceReference)?,
+  ResourceReference:reference LITERAL?,
+  ResourceReference:modifierExtension @<Extension>?,
+  ResourceReference:display LITERAL?,
+  ResourceReference:extension @<Extension>?
+}
+
+<Extension> {
+  a (fhir:Extension)?,
+  Extension:url LITERAL,
+  Extension:modifierExtension @<Extension>?,
+  Extension:value LITERAL?, #changed from @<Extension.value> to LITERAL
+  Extension:extension @<Extension>?
+}
+
+<Medication_package> {
+  a (fhir:Medication_package)?,
+  Medication_package:content @<Medication_package_content>*,
+  Medication_package:modifierExtension @<Extension>?,
+  Medication_package:container @<CodeableConcept>?,
+  Medication_package:extension @<Extension>?
+}
+
+<Medication_package_content> {
+  a (fhir:Medication_package_content)?,
+  Medication_package_content:item @<ResourceReference>,
+  Medication_package_content:amount @<Quantity>?,
+  Medication_package_content:modifierExtension @<Extension>?,
+  Medication_package_content:extension @<Extension>?
+}
+
+<Quantity> {
+  a (fhir:Quantity)?,
+  Quantity:modifierExtension @<Extension>?,
+  Quantity:comparator LITERAL?,
+  Quantity:extension @<Extension>?,
+  Quantity:system LITERAL?,
+  Quantity:value LITERAL?,
+  Quantity:code LITERAL?,
+  Quantity:units LITERAL?
+}
+
+<Medication_product> {
+  a (fhir:Medication_product)?,
+  Medication_product:modifierExtension @<Extension>?,
+  Medication_product:form @<CodeableConcept>?,
+  Medication_product:extension @<Extension>?,
+  Medication_product:ingredient @<Medication_product_ingredient>*
+}
+
+<Medication_product_ingredient> {
+  a (fhir:Medication_product_ingredient)?,
+  Medication_product_ingredient:item @<ResourceReference>,
+  Medication_product_ingredient:amount @<Ratio>?,
+  Medication_product_ingredient:modifierExtension @<Extension>?,
+  Medication_product_ingredient:extension @<Extension>?
+}
+
+<Ratio> {
+  a (fhir:Ratio)?,
+  Ratio:denominator @<Quantity>?,
+  Ratio:numerator @<Quantity>?,
+  Ratio:modifierExtension @<Extension>?,
+  Ratio:extension @<Extension>? 
+}
