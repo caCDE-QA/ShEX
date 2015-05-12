@@ -1,5 +1,6 @@
-PREFIX cadsr: <http://cadsr.org/cde#
-cadsr:DataElementList
+PREFIX cadsr: <http://cadsr.org/cde#>
+
+[]
       cadsr:DataElement
               [ cadsr:ALTERNATENAMELIST
                         [] ;
