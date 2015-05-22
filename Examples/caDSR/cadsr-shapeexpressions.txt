@@ -109,18 +109,21 @@ start=<DataElementShape>
     cadsr:MinimumValue @<NULLShape>,
     cadsr:Origin @<NULLShape>,
     cadsr:Representation @<RepresentationShape>,
-    cadsr:PermissibleValues @<PermissibleValueShape>+
+    cadsr:PermissibleValues @<PermissibleValueGroupShape>+
     #cadsr:ValueDomainConcepts @<ValueDomainConceptsShape>
+}
+
+<PermissibleValueGroupShape> {
+    cadsr:PermissibleValues_ITEM @<PermissibleValueShape>+
 }
 
 <PermissibleValueShape> {
     cadsr:VALIDVALUE xsd:string,
     cadsr:VALUEMEANING xsd:string,
     cadsr:MEANINGDESCRIPTION xsd:string,
-    cadsr:MEANINGCONCEPTS xsd:string,
-    cadsr:PVBEGINDATE xsd:dateTime,
-    (cadsr:PVENDDATE xsd:dateTime
-     |cadsr:PVENDDATE @<NULLShape>),
+    cadsr:MEANINGCONCEPTS @<NULLShape>,
+    cadsr:PVBEGINDATE xsd:string, # @@ xsd:dateTime
+    cadsr:PVENDDATE @<NULLShape>,
     cadsr:VMPUBLICID xsd:string,
     cadsr:VMVERSION xsd:string
 }
