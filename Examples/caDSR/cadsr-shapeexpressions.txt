@@ -14,9 +14,11 @@ start=<DataElementShape>
   cadsr:CONTEXTNAME xsd:string*,
   cadsr:CONTEXTVERSION xsd:string*,
   cadsr:ORIGIN xsd:string*,
-  cadsr:REGISTRATIONSTATUS @<NULLShape>*,  
+  ( cadsr:REGISTRATIONSTATUS xsd:string
+   | cadsr:REGISTRATIONSTATUS @<NULLShape>
+  )*,
   cadsr:DATAELEMENTCONCEPT @<DATAELEMENTCONCEPTShape>*, 
-  cadsr:VALUEDOMAIN @<VALUEDOMAINShape>*
+  cadsr:VALUEDOMAIN @<VALUEDOMAINShape>*,
   #cadsr:REFERENCEDOCUMENTSLIST @<REFERENCEDOCUMENTSLISTShape>,
   #cadsr:CLASSIFICATIONSLIST @<CLASSIFICATIONSLISTShape>,
   #cadsr:ALTERNATENAMELIST @<ALTERNATENAMELISTShape>,
@@ -101,13 +103,13 @@ start=<DataElementShape>
     cadsr:DisplayFormat @<NULLShape>,
     cadsr:MaximumLength xsd:string,
     cadsr:MinimumLength @<NULLShape>,
-    cadsr:DecimalPlace xsd:string,
+    cadsr:DecimalPlace xsd:string?,
     cadsr:CharacterSetName @<NULLShape>,
     cadsr:MaximumValue @<NULLShape>,
     cadsr:MinimumValue @<NULLShape>,
     cadsr:Origin @<NULLShape>,
     cadsr:Representation @<RepresentationShape>,
-    cadsr:PermissibleValues @<PermissibleValueShape>*
+    cadsr:PermissibleValues @<PermissibleValueShape>+
     #cadsr:ValueDomainConcepts @<ValueDomainConceptsShape>
 }
 
