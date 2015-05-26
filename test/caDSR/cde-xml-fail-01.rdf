@@ -283,7 +283,7 @@ PREFIX cadsr: <http://cadsr.org/cde#>
                 cadsr:PREFERREDNAME
                         "3302241v1.0:3302238v1.0" ;
                 cadsr:PUBLICID
-                        "3302242" ;
+                        3302242 ;
                 cadsr:REFERENCEDOCUMENTSLIST
                         [ cadsr:REFERENCEDOCUMENTSLIST_ITEM
                                   [ cadsr:DisplayOrder

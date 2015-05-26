@@ -41,7 +41,7 @@ VIRTUAL <Value_Domain_Shape> {
     iso11179:value_domain_datatype @<Datatype_Shape>,
     iso11179:value_domain_format xsd:string?,
     iso11179:value_domain_maximum_character_quantity xsd:integer?,
-    iso11179:value_domain_unite_of_measure @<Unit_of_Measure>?,
+    iso11179:value_domain_unite_of_measure @<Unit_of_Measure_Shape>?,
     iso11179:meaning @<Conceptual_Domain_Shape>
 }
 
@@ -110,4 +110,6 @@ VIRTUAL <Conceptual_Domain_Shape> {
     rdfs:label xsd:string
 }
 
+<Unit_of_Measure_Shape> {
 
+}

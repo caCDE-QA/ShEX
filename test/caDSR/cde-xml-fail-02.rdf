@@ -1,0 +1,261 @@
+PREFIX cadsr: <http://cadsr.org/cde#>
+
+[]
+      cadsr:DataElement
+              [ cadsr:ALTERNATENAMELIST
+                        [] ;
+                cadsr:CLASSIFICATIONSLIST
+                        [] ;
+                cadsr:CONTEXTNAME
+                        "CTEP" ;
+                cadsr:CONTEXTVERSION
+                        "2.31" ;
+                cadsr:DATAELEMENTCONCEPT
+                        [ cadsr:ConceptualDomain
+                                  [ cadsr:ContextName
+                                            "CTEP" ;
+                                    cadsr:ContextVersion
+                                            "2.31" ;
+                                    cadsr:LongName
+                                            "Quality of Life" ;
+                                    cadsr:PreferredName
+                                            "QOL" ;
+                                    cadsr:PublicId
+                                            "2008553" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:ContextName
+                                  "CTEP" ;
+                          cadsr:ContextVersion
+                                  "2.31" ;
+                          cadsr:LongName
+                                  "Patient Happiness Assessment" ;
+                          cadsr:ObjectClass
+                                  [ cadsr:ConceptDetails
+                                            [ cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2202778" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI" ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "0" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Patient" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C16960" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "Yes"
+                                                      ]
+                                            ] ;
+                                    cadsr:ContextName
+                                            "CTEP" ;
+                                    cadsr:ContextVersion
+                                            "2.31" ;
+                                    cadsr:LongName
+                                            "Patient" ;
+                                    cadsr:PreferredName
+                                            "Patient" ;
+                                    cadsr:PublicId
+                                            "2177068" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:ObjectClassQualifier
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:Origin
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:PreferredDefinition
+                                  "information relating to patient happiness assessment." ;
+                          cadsr:PreferredName
+                                  "PT_HAPPINESS_ASESS" ;
+                          cadsr:Property
+                                  [ cadsr:ConceptDetails
+                                            [] ;
+                                    cadsr:ContextName
+                                            "CTEP" ;
+                                    cadsr:ContextVersion
+                                            "2.31" ;
+                                    cadsr:LongName
+                                            "Happiness Assessment" ;
+                                    cadsr:PreferredName
+                                            "C0018592:C20989" ;
+                                    cadsr:PublicId
+                                            "2211692" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:PropertyQualifier
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:PublicId
+                                  "2202115" ;
+                          cadsr:Version
+                                  "1" ;
+                          cadsr:WorkflowStatus
+                                  "RELEASED"
+                        ] ;
+                cadsr:DATAELEMENTDERIVATION
+                        [ cadsr:ComponentDataElementsList
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:ConcatenationCharacter
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:DerivationType
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:DerivationTypeDescription
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:Methods
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:Rule
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ]
+                        ] ;
+                cadsr:LONGNAME
+                        "Patient Happiness Assessment Scale" ;
+                cadsr:ORIGIN
+                        "ACOSOG CRF:American College of Surgeons Oncology Group Case Report Form" ;
+                cadsr:PREFERREDDEFINITION
+                        "the scale to determine the patient's assessment of whether they have been a happy person." ;
+                cadsr:PREFERREDNAME
+                        "PT_HAPPI_ASESS_SCALE" ;
+                cadsr:PUBLICID
+                        "2202116" ;
+                cadsr:REFERENCEDOCUMENTSLIST
+                        [] ;
+                cadsr:REGISTRATIONSTATUS
+                        "Qualified" ;
+                cadsr:VALUEDOMAIN
+                        [ cadsr:CharacterSetName
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:ConceptualDomain
+                                  [ cadsr:ContextName
+                                            "CTEP" ;
+                                    cadsr:ContextVersion
+                                            "2.31" ;
+                                    cadsr:LongName
+                                            "Assessments" ;
+                                    cadsr:PreferredName
+                                            "ASSESS" ;
+                                    cadsr:PublicId
+                                            "2008551" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:ContextName
+                                  "CTEP" ;
+                          cadsr:ContextVersion
+                                  "2.31" ;
+                          cadsr:Datatype
+                                  "CHARACTER" ;
+                          cadsr:DecimalPlace
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:DisplayFormat
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:LongName
+                                  "Assessment Scale" ;
+                          cadsr:MaximumLength
+                                  "25" ;
+                          cadsr:MaximumValue
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:MinimumLength
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:MinimumValue
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:Origin
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:PermissibleValues
+                                  [] ;
+                          cadsr:PreferredDefinition
+                                  "the scale to determine the patient's assessment of general health." ;
+                          cadsr:PreferredName
+                                  "ASSESS_SCALE" ;
+                          cadsr:PublicId
+                                  "2016428" ;
+                          cadsr:Representation
+                                  [ cadsr:ConceptDetails
+                                            [ cadsr:ConceptDetails_ITEM
+                                                      [ cadsr:CON_ID
+                                                                "2203964" ;
+                                                        cadsr:DEFINITION_SOURCE
+                                                                "NCI " ;
+                                                        cadsr:DISPLAY_ORDER
+                                                                "0" ;
+                                                        cadsr:EVS_SOURCE
+                                                                "NCI_CONCEPT_CODE" ;
+                                                        cadsr:LONG_NAME
+                                                                "Scale" ;
+                                                        cadsr:ORIGIN
+                                                                "NCI Thesaurus" ;
+                                                        cadsr:PREFERRED_NAME
+                                                                "C25664" ;
+                                                        cadsr:PRIMARY_FLAG_IND
+                                                                "Yes"
+                                                      ]
+                                            ] ;
+                                    cadsr:ContextName
+                                            "caBIG" ;
+                                    cadsr:ContextVersion
+                                            "1" ;
+                                    cadsr:LongName
+                                            "Scale" ;
+                                    cadsr:PreferredName
+                                            "C25664" ;
+                                    cadsr:PublicId
+                                            "2452834" ;
+                                    cadsr:Version
+                                            "1"
+                                  ] ;
+                          cadsr:UnitOfMeasure
+                                  [ cadsr:NULL
+                                            "TRUE"
+                                  ] ;
+                          cadsr:ValueDomainConcepts
+                                  [] ;
+                          cadsr:ValueDomainType
+                                  "Enumerated" ;
+                          cadsr:Version
+                                  "3" ;
+                          cadsr:WorkflowStatus
+                                  "RELEASED"
+                        ] ;
+                cadsr:VERSION
+                        "1" ;
+                cadsr:WORKFLOWSTATUS
+                        "RELEASED" ;
+                cadsr:num
+                        "1445"
+              ] .

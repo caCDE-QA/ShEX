@@ -37,7 +37,7 @@ start=<Medication>
   a (fhir:CodeableConcept)?,
   CodeableConcept:text LITERAL?,
   CodeableConcept:modifierExtension @<Extension>?,
-  CodeableConcept:coding @<Coding>*,
+  CodeableConcept:coding @<Coding>+,
   CodeableConcept:extension @<Extension>?
 }
 

@@ -1,8 +1,8 @@
 PREFIX cadsr: <http://cadsr.org/cde#>
 
-[] cadsr:DataElement _:DataElement1 .
-
-_:DataElement1 cadsr:ALTERNATENAMELIST
+[]
+      cadsr:DataElement
+              [ cadsr:ALTERNATENAMELIST
                         [ cadsr:ALTERNATENAMELIST_ITEM
                                   [ cadsr:AlternateName
                                             "DCP" ;
@@ -756,4 +756,4 @@ _:DataElement1 cadsr:ALTERNATENAMELIST
                         "RELEASED" ;
                 cadsr:num
                         "1445"
-              .
+              ] .
