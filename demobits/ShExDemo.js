@@ -955,7 +955,7 @@ ShExDemo = function() {
                 $("#as-resource-sexpr"   ).attr("href", dtp + Base64.encode(iface.validator.toSExpression(0)));
                 $("#as-resource-haskell" ).attr("href", dtp + Base64.encode(iface.validator.toHaskell(0)));
                 if (textValue("#schema") === '') {
-                    iface.parseMessage("#schema .now").append("<div id=\"emptySchema\"><h3>Empty Schema</h3>An empty schema is valid, but you might want to see <a href=\"#\" onclick=\"outerLayout.toggle(\'west\')\" style='background-color: yellow;'>some examples</a>.</div>");
+                    iface.parseMessage("#schema .now").append("<div id=\"emptySchema\"><h3>Empty Schema</h3>An empty schema is valid, but you might want to see <a href=\"#\" onclick=\"outerLayout.toggle(\'west\')\" style='background-color: yellow;'>some examples we have</a> or load some of your <a href=\"Examples\" style='background-color: yellow;'>own</a>.</div>");
                     $("#emptySchema").css("position","absolute").css("top",($("#schema .textInput").height()/3)+"px").css("left","3em");
                 } else
                     $("#view a").removeClass("disabled");
