@@ -1,0 +1,29 @@
+<Period> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Period>)?,
+    <http://fhir.org/Period#start> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX start/@value %},
+    <http://fhir.org/Period#end> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX end/@value %},
+    <http://fhir.org/Period#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Period#extension> @<Extension> %{GenX extension = %}
+}
+
+<Extension> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Extension>)?,
+    <http://fhir.org/Extension#url> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX url/@value %},
+    <http://fhir.org/Extension#value> @<Extension.value> %{GenX value = %},
+    <http://fhir.org/Extension#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Extension#extension> @<Extension> %{GenX extension = %}
+}
+
+<HumanName> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#HumanName>)?,
+    <http://fhir.org/HumanName#given> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX given/@value %},
+    <http://fhir.org/HumanName#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/HumanName#family> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX family/@value %},
+    <http://fhir.org/HumanName#text> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX text/@value %},
+    <http://fhir.org/HumanName#use> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX use/@value %},
+    <http://fhir.org/HumanName#period> @<Period> %{GenX period = %},
+    <http://fhir.org/HumanName#prefix> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX prefix/@value %},
+    <http://fhir.org/HumanName#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/HumanName#suffix> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX suffix/@value %}
+}
+

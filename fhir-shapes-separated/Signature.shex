@@ -1,0 +1,38 @@
+<Reference> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Reference>)?,
+    <http://fhir.org/Reference#reference> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX reference/@value %},
+    <http://fhir.org/Reference#display> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX display/@value %},
+    <http://fhir.org/Reference#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/Reference#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %}
+}
+
+<Extension> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Extension>)?,
+    <http://fhir.org/Extension#url> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX url/@value %},
+    <http://fhir.org/Extension#value> @<Extension.value> %{GenX value = %},
+    <http://fhir.org/Extension#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Extension#extension> @<Extension> %{GenX extension = %}
+}
+
+<Coding> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Coding>)?,
+    <http://fhir.org/Coding#code> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX code/@value %},
+    <http://fhir.org/Coding#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/Coding#system> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX system/@value %},
+    <http://fhir.org/Coding#primary> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX primary/@value %},
+    <http://fhir.org/Coding#version> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX version/@value %},
+    <http://fhir.org/Coding#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Coding#display> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX display/@value %}
+}
+
+<Signature> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Signature>)?,
+    <http://fhir.org/Signature#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/Signature#when> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX when/@value %},
+    <http://fhir.org/Signature#whoUri> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX whoUri/@value %},
+    <http://fhir.org/Signature#blob> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX blob/@value %},
+    <http://fhir.org/Signature#whoReference> @<Reference> %{GenX whoReference = %},
+    <http://fhir.org/Signature#type> @<Coding> %{GenX type = %},
+    <http://fhir.org/Signature#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %}
+}
+

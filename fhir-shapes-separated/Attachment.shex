@@ -1,0 +1,22 @@
+<Extension> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Extension>)?,
+    <http://fhir.org/Extension#url> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX url/@value %},
+    <http://fhir.org/Extension#value> @<Extension.value> %{GenX value = %},
+    <http://fhir.org/Extension#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Extension#extension> @<Extension> %{GenX extension = %}
+}
+
+<Attachment> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Attachment>)?,
+    <http://fhir.org/Attachment#contentType> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX contentType/@value %},
+    <http://fhir.org/Attachment#language> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX language/@value %},
+    <http://fhir.org/Attachment#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/Attachment#title> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX title/@value %},
+    <http://fhir.org/Attachment#url> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX url/@value %},
+    <http://fhir.org/Attachment#creation> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX creation/@value %},
+    <http://fhir.org/Attachment#hash> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX hash/@value %},
+    <http://fhir.org/Attachment#data> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX data/@value %},
+    <http://fhir.org/Attachment#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Attachment#size> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX size/@value %}
+}
+

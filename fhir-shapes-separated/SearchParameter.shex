@@ -1,0 +1,71 @@
+<Extension> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Extension>)?,
+    <http://fhir.org/Extension#url> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX url/@value %},
+    <http://fhir.org/Extension#value> @<Extension.value> %{GenX value = %},
+    <http://fhir.org/Extension#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Extension#extension> @<Extension> %{GenX extension = %}
+}
+
+<Narrative> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Narrative>)?,
+    <http://fhir.org/Narrative#status> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX status/@value %},
+    <http://fhir.org/Narrative#div> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX div/@value %},
+    <http://fhir.org/Narrative#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Narrative#extension> @<Extension> %{GenX extension = %}
+}
+
+<Coding> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Coding>)?,
+    <http://fhir.org/Coding#code> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX code/@value %},
+    <http://fhir.org/Coding#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/Coding#system> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX system/@value %},
+    <http://fhir.org/Coding#primary> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX primary/@value %},
+    <http://fhir.org/Coding#version> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX version/@value %},
+    <http://fhir.org/Coding#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Coding#display> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX display/@value %}
+}
+
+<Meta> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Meta>)?,
+    <http://fhir.org/Meta#profile> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX profile/@value %},
+    <http://fhir.org/Meta#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/Meta#lastUpdated> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX lastUpdated/@value %},
+    <http://fhir.org/Meta#versionId> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX versionId/@value %},
+    <http://fhir.org/Meta#tag> @<Coding> %{GenX tag = %},
+    <http://fhir.org/Meta#security> @<Coding> %{GenX security = %},
+    <http://fhir.org/Meta#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %}
+}
+
+<SearchParameter> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#SearchParameter>)?,
+    <http://fhir.org/SearchParameter#status> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX status/@value %},
+    <http://fhir.org/SearchParameter#publisher> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX publisher/@value %},
+    <http://fhir.org/SearchParameter#modifierExtension> @<Extension> %{GenX modifierExtension = %},
+    <http://fhir.org/SearchParameter#requirements> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX requirements/@value %},
+    <http://fhir.org/SearchParameter#description> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX description/@value %},
+    <http://fhir.org/SearchParameter#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/SearchParameter#url> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX url/@value %},
+    <http://fhir.org/SearchParameter#name> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX name/@value %},
+    <http://fhir.org/SearchParameter#contact> @<SearchParameter.contact> %{GenX contact = %},
+    <http://fhir.org/SearchParameter#language> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX language/@value %},
+    <http://fhir.org/SearchParameter#contained> @<Resource> %{GenX contained = %},
+    <http://fhir.org/SearchParameter#base> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX base/@value %},
+    <http://fhir.org/SearchParameter#meta> @<Meta> %{GenX meta = %},
+    <http://fhir.org/SearchParameter#type> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX type/@value %},
+    <http://fhir.org/SearchParameter#target> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX target/@value %},
+    <http://fhir.org/SearchParameter#date> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX date/@value %},
+    <http://fhir.org/SearchParameter#xpath> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX xpath/@value %},
+    <http://fhir.org/SearchParameter#text> @<Narrative> %{GenX text = %},
+    <http://fhir.org/SearchParameter#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/SearchParameter#experimental> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX experimental/@value %},
+    <http://fhir.org/SearchParameter#implicitRules> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX implicitRules/@value %}
+}
+
+<Resource> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Resource>)?,
+    <http://fhir.org/Resource#meta> @<Meta> %{GenX meta = %},
+    <http://fhir.org/Resource#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Resource#language> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX language/@value %},
+    <http://fhir.org/Resource#implicitRules> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX implicitRules/@value %}
+}
+

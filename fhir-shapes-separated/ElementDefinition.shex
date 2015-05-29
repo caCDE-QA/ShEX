@@ -1,0 +1,53 @@
+<Extension> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Extension>)?,
+    <http://fhir.org/Extension#url> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX url/@value %},
+    <http://fhir.org/Extension#value> @<Extension.value> %{GenX value = %},
+    <http://fhir.org/Extension#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Extension#extension> @<Extension> %{GenX extension = %}
+}
+
+<Coding> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Coding>)?,
+    <http://fhir.org/Coding#code> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX code/@value %},
+    <http://fhir.org/Coding#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/Coding#system> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX system/@value %},
+    <http://fhir.org/Coding#primary> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX primary/@value %},
+    <http://fhir.org/Coding#version> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX version/@value %},
+    <http://fhir.org/Coding#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Coding#display> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX display/@value %}
+}
+
+<ElementDefinition> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#ElementDefinition>)?,
+    <http://fhir.org/ElementDefinition#code> @<Coding> %{GenX code = %},
+    <http://fhir.org/ElementDefinition#binding> @<ElementDefinition.binding> %{GenX binding = %},
+    <http://fhir.org/ElementDefinition#path> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX path/@value %},
+    <http://fhir.org/ElementDefinition#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/ElementDefinition#requirements> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX requirements/@value %},
+    <http://fhir.org/ElementDefinition#min> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX min/@value %},
+    <http://fhir.org/ElementDefinition#pattern> @<ElementDefinition.pattern> %{GenX pattern = %},
+    <http://fhir.org/ElementDefinition#defaultValue> @<ElementDefinition.defaultValue> %{GenX defaultValue = %},
+    <http://fhir.org/ElementDefinition#comments> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX comments/@value %},
+    <http://fhir.org/ElementDefinition#label> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX label/@value %},
+    <http://fhir.org/ElementDefinition#isModifier> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX isModifier/@value %},
+    <http://fhir.org/ElementDefinition#nameReference> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX nameReference/@value %},
+    <http://fhir.org/ElementDefinition#isSummary> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX isSummary/@value %},
+    <http://fhir.org/ElementDefinition#type> @<ElementDefinition.type> %{GenX type = %},
+    <http://fhir.org/ElementDefinition#max> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX max/@value %},
+    <http://fhir.org/ElementDefinition#mapping> @<ElementDefinition.mapping> %{GenX mapping = %},
+    <http://fhir.org/ElementDefinition#slicing> @<ElementDefinition.slicing> %{GenX slicing = %},
+    <http://fhir.org/ElementDefinition#maxLength> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX maxLength/@value %},
+    <http://fhir.org/ElementDefinition#meaningWhenMissing> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX meaningWhenMissing/@value %},
+    <http://fhir.org/ElementDefinition#condition> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX condition/@value %},
+    <http://fhir.org/ElementDefinition#definition> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX definition/@value %},
+    <http://fhir.org/ElementDefinition#short> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX short/@value %},
+    <http://fhir.org/ElementDefinition#name> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX name/@value %},
+    <http://fhir.org/ElementDefinition#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/ElementDefinition#constraint> @<ElementDefinition.constraint> %{GenX constraint = %},
+    <http://fhir.org/ElementDefinition#alias> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX alias/@value %},
+    <http://fhir.org/ElementDefinition#mustSupport> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX mustSupport/@value %},
+    <http://fhir.org/ElementDefinition#representation> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX representation/@value %},
+    <http://fhir.org/ElementDefinition#fixed> @<ElementDefinition.fixed> %{GenX fixed = %},
+    <http://fhir.org/ElementDefinition#example> @<ElementDefinition.example> %{GenX example = %}
+}
+

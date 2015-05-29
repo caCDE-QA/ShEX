@@ -1,0 +1,16 @@
+<Reference> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Reference>)?,
+    <http://fhir.org/Reference#reference> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX reference/@value %},
+    <http://fhir.org/Reference#display> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX display/@value %},
+    <http://fhir.org/Reference#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/Reference#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %}
+}
+
+<Extension> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Extension>)?,
+    <http://fhir.org/Extension#url> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX url/@value %},
+    <http://fhir.org/Extension#value> @<Extension.value> %{GenX value = %},
+    <http://fhir.org/Extension#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Extension#extension> @<Extension> %{GenX extension = %}
+}
+

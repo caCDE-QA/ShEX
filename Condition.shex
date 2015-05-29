@@ -1,0 +1,12 @@
+function (orig) {
+            var ret = '';
+
+            var Schema = this;
+            if (this.init)
+                Object.keys(this.init).map(function (k) { ret += Schema.init[k] + "\n"; })
+            if (this.startRule)
+                ret += "start = " + this.startRule.toString(orig) + "\n\n";
+            for (var label in this.ruleMap)
+                ret += this.serializeRule(label, orig);
+            return ret;
+        }

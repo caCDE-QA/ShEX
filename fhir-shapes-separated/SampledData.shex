@@ -1,0 +1,32 @@
+<SampledData> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#SampledData>)?,
+    <http://fhir.org/SampledData#origin> @<Quantity> %{GenX origin = %},
+    <http://fhir.org/SampledData#dimensions> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX dimensions/@value %},
+    <http://fhir.org/SampledData#lowerLimit> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX lowerLimit/@value %},
+    <http://fhir.org/SampledData#period> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX period/@value %},
+    <http://fhir.org/SampledData#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/SampledData#factor> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX factor/@value %},
+    <http://fhir.org/SampledData#data> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX data/@value %},
+    <http://fhir.org/SampledData#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/SampledData#upperLimit> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX upperLimit/@value %}
+}
+
+<Quantity> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Quantity>)?,
+    <http://fhir.org/Quantity#code> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX code/@value %},
+    <http://fhir.org/Quantity#comparator> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX comparator/@value %},
+    <http://fhir.org/Quantity#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/Quantity#system> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX system/@value %},
+    <http://fhir.org/Quantity#value> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX value/@value %},
+    <http://fhir.org/Quantity#units> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX units/@value %},
+    <http://fhir.org/Quantity#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %}
+}
+
+<Extension> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Extension>)?,
+    <http://fhir.org/Extension#url> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX url/@value %},
+    <http://fhir.org/Extension#value> @<Extension.value> %{GenX value = %},
+    <http://fhir.org/Extension#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Extension#extension> @<Extension> %{GenX extension = %}
+}
+

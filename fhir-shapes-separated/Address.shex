@@ -1,0 +1,30 @@
+<Period> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Period>)?,
+    <http://fhir.org/Period#start> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX start/@value %},
+    <http://fhir.org/Period#end> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX end/@value %},
+    <http://fhir.org/Period#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Period#extension> @<Extension> %{GenX extension = %}
+}
+
+<Extension> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Extension>)?,
+    <http://fhir.org/Extension#url> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX url/@value %},
+    <http://fhir.org/Extension#value> @<Extension.value> %{GenX value = %},
+    <http://fhir.org/Extension#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Extension#extension> @<Extension> %{GenX extension = %}
+}
+
+<Address> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Address>)?,
+    <http://fhir.org/Address#city> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX city/@value %},
+    <http://fhir.org/Address#use> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX use/@value %},
+    <http://fhir.org/Address#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/Address#country> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX country/@value %},
+    <http://fhir.org/Address#period> @<Period> %{GenX period = %},
+    <http://fhir.org/Address#state> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX state/@value %},
+    <http://fhir.org/Address#text> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX text/@value %},
+    <http://fhir.org/Address#postalCode> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX postalCode/@value %},
+    <http://fhir.org/Address#line> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX line/@value %},
+    <http://fhir.org/Address#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %}
+}
+

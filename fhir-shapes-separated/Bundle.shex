@@ -1,0 +1,44 @@
+<Extension> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Extension>)?,
+    <http://fhir.org/Extension#url> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX url/@value %},
+    <http://fhir.org/Extension#value> @<Extension.value> %{GenX value = %},
+    <http://fhir.org/Extension#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Extension#extension> @<Extension> %{GenX extension = %}
+}
+
+<Bundle> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Bundle>)?,
+    <http://fhir.org/Bundle#language> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX language/@value %},
+    <http://fhir.org/Bundle#meta> @<Meta> %{GenX meta = %},
+    <http://fhir.org/Bundle#base> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX base/@value %},
+    <http://fhir.org/Bundle#link> @<Bundle.link> %{GenX link = %},
+    <http://fhir.org/Bundle#signature> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX signature/@value %},
+    <http://fhir.org/Bundle#entry> @<Bundle.entry> %{GenX entry = %},
+    <http://fhir.org/Bundle#total> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX total/@value %},
+    <http://fhir.org/Bundle#type> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX type/@value %},
+    <http://fhir.org/Bundle#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Bundle#implicitRules> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX implicitRules/@value %}
+}
+
+<Coding> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Coding>)?,
+    <http://fhir.org/Coding#code> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX code/@value %},
+    <http://fhir.org/Coding#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/Coding#system> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX system/@value %},
+    <http://fhir.org/Coding#primary> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX primary/@value %},
+    <http://fhir.org/Coding#version> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX version/@value %},
+    <http://fhir.org/Coding#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %},
+    <http://fhir.org/Coding#display> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX display/@value %}
+}
+
+<Meta> {
+    <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> (<http://fhir.org/#Meta>)?,
+    <http://fhir.org/Meta#profile> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX profile/@value %},
+    <http://fhir.org/Meta#extension> @<Extension> %{GenX extension = %},
+    <http://fhir.org/Meta#lastUpdated> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX lastUpdated/@value %},
+    <http://fhir.org/Meta#versionId> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX versionId/@value %},
+    <http://fhir.org/Meta#tag> @<Coding> %{GenX tag = %},
+    <http://fhir.org/Meta#security> @<Coding> %{GenX security = %},
+    <http://fhir.org/Meta#id> <http://www.w3.org/2013/ShEx/ns#Literal> %{GenX id/@value %}
+}
+
