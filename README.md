@@ -3,8 +3,9 @@ ShExDemo
 
 Shape Expressions Conpact Syntax Demo
 
+## NCI ITCR 2017 Annual Meeting (https://itcr.soe.ucsc.edu/)
 
-## A Video Presentation for Modeling and Validating FHIR Models using ShEx
+### A Video Presentation for Modeling and Validating FHIR Models using ShEx
 
 [![ShEx, RDF and FHIR Demo Video](https://raw.githubusercontent.com/caCDE-QA/ShEX/master/FHIR_ShEx_Demo_201705.png)](https://youtu.be/fIElhAPQcwo)
 
