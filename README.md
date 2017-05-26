@@ -3,6 +3,11 @@ ShExDemo
 
 Shape Expressions Conpact Syntax Demo
 
+
+## A Video Presentation for Modeling and Validating FHIR Models using ShEx
+
+[![ShEx, RDF and FHIR Demo Video](https://raw.githubusercontent.com/caCDE-QA/ShEX/master/FHIR_ShEx_Demo_201705.png)](https://youtu.be/fIElhAPQcwo)
+
 ## FHIR ShEx published in the Journal of Biomedical Informatics, March 2017
 * Solbrig HR, Prud'hommeaux E, Grieve G, McKenzie L, Mandel JC, Sharma DK, Jiang G. Modeling and validating HL7 FHIR profiles using semantic web Shape Expressions (ShEx). J Biomed Inform. 2017 Mar;67:90-100. doi: 10.1016/j.jbi.2017.02.009. Epub 2017 Feb 16. 
 * PubMed Link: https://www.ncbi.nlm.nih.gov/pubmed/28213144 
